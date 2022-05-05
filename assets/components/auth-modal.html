@@ -1,0 +1,50 @@
+<div class="modal-background"></div>
+<div class="modal-content">
+	<div class="box">
+		<div class="tabs modal-tabs is-medium">
+		 	<ul>
+		    	<li class="tab-sign-in is-active" data-is-join=false><a>Sign In</a></li>
+		    	<li class="tab-join" data-is-join=true><a>Join</a></li>
+		  	</ul>
+		</div>
+		<form autocomplete="on">
+			<div class="field name-field" style="display: none;">
+				<label class="label is-small">NAME</label>
+				<div class="control">
+				    <input class="name-input input" name="name" type="text" placeholder="James Bond">
+				</div>
+				<p class="help help-name-input"></p>
+			</div>
+			<div class="field username-field" style="display: none;">
+				<label class="label is-small">USERNAME</label>
+				<div class="control">
+				    <input class="username-input input" name="username" type="text" placeholder="jbond">
+				</div>
+				<p class="help help-username-input"></p>
+			</div>
+			<div class="field email-field">
+				<label class="label is-small">EMAIL</label>
+				<div class="control">
+				    <input class="email-input input" name="email" type="email" placeholder="james@bond.com">
+				</div>
+				<p class="help help-email-input"></p>
+			</div>
+			<div class="field password-field">
+				<label class="label is-small">PASSWORD</label>
+				<div class="control">
+				    <input class="password-input input" name="password" type="password" placeholder="••••••••••">
+				</div>
+				<p class="help help-password-input"></p>
+			</div>
+			<p class="subtitle is-6 is-spaced is-light agreement">By joining you agree to the 
+				<a href="/legal/terms" target="_blank">Terms of Service</a> and the 
+				<a href="/legal/privacy" target="_blank">Privacy Policy</a>
+			</p>
+			<p class="help general-help is-danger"></p>
+		</form>
+		<div class="buttons">
+			<button class="button auth-submit is-link form-button" onclick="authenticate()">Sign In</button>
+			<button class="button is-link is-outlined form-button" onclick="hideModal()">Cancel</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,16 @@
+
+.column .article-title {
+	margin-top: 16px;
+}
+
+.articles a {
+	color: inherit;
+}
+
+.articles a:hover h3 {
+	color: #9984D4;
+}
+
+.button.is-loading {
+	width: 54px;
+}

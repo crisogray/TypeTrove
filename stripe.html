@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Connect with Stripe - TypeTrove</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106314448-2"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
+		<script type="text/javascript" src="/assets/javascripts/global.js"></script>
+		<script type="text/javascript" src="/assets/javascripts/stripe-auth.js"></script>
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/bulma.css">
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/main.css">
+		<link rel="icon" type="image/png" href="/assets/images/t.png">
+	</head>
+	<body>
+		<section class="section">
+			<div class="container">
+				<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+				  	<div class="navbar-brand">
+				    	<p class="navbar-item" href="/">
+				      		<h1 class="brand-text">typetrove<span class="has-text-link">.</span></h1>
+				    	</p>
+				  	</div>
+				</nav>
+				<section class="hero is-medium">
+					<div class="hero-body has-text-centered">
+						<div class="container">
+							<div class="stripe-loading">
+								<span class="button is-static is-large is-link is-outlined is-loading is-rounded form-button"></span>
+							</div>
+							<div class="stripe-success" style="display: none">
+								<h1 class="title is-3">Sucessfully Connected to Stripe</h1>
+								<h3 class="subtitle is-light is-5">You can now close this tab.</h3>
+							</div>
+							<div class="stripe-error" style="display: none;">
+								<h1 class="title is-3">There was a problem</h1>
+								<h3 class="subtitle is-light is-5 stripe-error-text">An unknown error occured whilst authenticating with stripe.</h3>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<div class="modal error-modal"></div>
+	</body>
+</html>

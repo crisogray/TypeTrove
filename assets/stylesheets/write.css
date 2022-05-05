@@ -1,0 +1,49 @@
+.graf--blockquote {
+	font-size: 22px;
+	border-left-color: #282923;
+}
+
+.graf--h3 {
+	font-family: "Raleway", sans-serif;
+	color: #282923;
+}
+
+.graf--h4 {
+	font-family: "Roboto";
+	font-weight: 200;
+}
+
+.graf--p, .graf--blockquote {
+	font-family: "Merriweather", serif;
+	color: #282923;
+}
+
+.section-inner {
+	width: 100% !important;
+}
+
+.editor {
+	margin-bottom: 0;
+	z-index: 1;
+}
+
+.navbar {
+	z-index: 0
+}
+
+.inlineTooltip-button {
+	text-align: center;
+}
+
+p.title.is-4 {
+	font-weight: 400;
+}
+
+p.subtitle.is-6 {
+	margin-bottom: 0.75rem;
+	font-weight: 200;
+}
+
+.label.is-light {
+	font-weight: 200;
+}

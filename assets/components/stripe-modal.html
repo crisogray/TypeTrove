@@ -1,0 +1,15 @@
+<div class="modal-background"></div>
+<div class="modal-content">
+	<div class="box">
+		<label class="label is-medium">Connect with Stripe</label>
+		<label class="label is-light">Login to Stripe to be able to receive payment from your article.</label>
+		<nav class="level">
+			<div class="level-left">
+				<a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_ELfkiZumeWYomGwYsSICtA2BGtyWCFrp&scope=read_write" target="_blank" class="level-item form-button">
+					<img class="stripe-connect" src="/assets/images/stripe-connect.png">
+				</a>
+				<button class="button is-link is-outlined level-item form-button" onclick="hideStripeModal()">Cancel</button>
+			</div>
+		</nav>
+	</div>
+</div>

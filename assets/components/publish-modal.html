@@ -1,0 +1,50 @@
+<div class="modal-background"></div>
+<div class="modal-content">
+	<div class="box">
+		<div class="publish-price">
+			<label class="label is-medium">Choose a Price</label>
+			<label class="label is-light">Decide how much people will pay for your article.</label>
+			<div class="field price-field">
+				<div class="control has-icons-left">
+					<input class="price-input input is-large" name="price" type="text" placeholder="4.00">
+					<span class="icon is-large is-left"><i class="fas fa-dollar-sign"></i></span>
+				</div>
+				<p class="help help-price-input"></p>
+			</div>
+			<label class="label is-light is-small">
+				Service and payment processing fees are 30¢ + 8% (Includes Stripe charges).<br>
+				The first 100 words can be read for free as a preview of the article.
+			</label>
+			<div class="buttons">
+				<button class="button price-submit is-link form-button" onclick="submitPrice()">Publish</button>
+				<button class="button is-link is-outlined form-button" onclick="hidePublishModal()">Cancel</button>
+			</div>
+		</div>
+		<div class="publish-confirm" style="display: none;">
+			<label class="label is-medium">Confirm</label>
+			<label class="label is-light publish-confirm-text">
+				Are you sure you want to publish your article?<br>
+				It will have a price of <strong>$4.00</strong>.
+			</label>
+			<label class="label is-light is-small">The first 100 words can be read for free as a preview of the
+				article.</label>
+			<div class="buttons">
+				<button class="button price-confirm is-link form-button" onclick="confirmSubmit()">Publish</button>
+				<button class="button is-link is-outlined form-button" onclick="backToPrice()">Back</button>
+			</div>
+		</div>
+		<div class="publish-success" style="display: none;">
+			<label class="label is-medium">Success!</label>
+			<label class="label is-light">Your article has been published!</label>
+			<div class="control"><input id="link-box" class="input is-large link-box" type="text" readonly></div>
+			<div class="buttons form-button">
+				<a class="button tweet-button is-info form-button" target="_blank">
+					<span class="icon"><i class="fab fa-twitter"></i></span><span>Tweet Your Article</span>
+				</a>
+				<button class="button social-button is-link form-button" onclick="copyLink()">Copy Link</button>
+				<button class="button social-button is-link is-outlined form-button"
+					onclick="completePublish()">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

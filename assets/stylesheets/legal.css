@@ -1,0 +1,15 @@
+.container-content * {
+	margin-top: 16px;
+}
+
+.title, .subtitle {
+	margin-top: 32px;
+}
+
+p, li {
+	font-weight: 300;
+}
+
+ul, ol {
+	list-style: inside;
+}

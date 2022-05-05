@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$purple: #9984D4;
+$brown: #282923;
+$beige-light: #D0D1CD;
+$beige-lighter: #ffffff;
+
+// Update Bulma's global variables
+$family-primary: "Roboto", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$link: $purple;//hsl(217, 71%, 53%);
+$primary: $purple;
+$danger: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-shadow: none;
+$navbar-height: 5rem;
+$navbar-box-shadow-size: 0 2px 0 0;
+$navbar-box-shadow-color: $grey-dark;
+$pre: $brown;
+
+// Import only what you need from Bulma
+@import "../bulma-0.7.2/sass/utilities/_all.sass";
+@import "../bulma-0.7.2/sass/base/_all.sass";
+@import "../bulma-0.7.2/sass/elements/_all.sass";
+@import "../bulma-0.7.2/sass/grid/_all.sass";
+@import "../bulma-0.7.2/sass/layout/_all.sass";
+@import "../bulma-0.7.2/sass/components/_all.sass";

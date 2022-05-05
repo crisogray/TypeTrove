@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Write - TypeTrove</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106314448-2"></script>
+		<script type="text/javascript" src="assets/javascripts/dependencies.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
+		<script type="text/javascript" src="assets/javascripts/dante.js"></script>
+		<script type="text/javascript" src="assets/javascripts/write.js"></script>
+		<script type="text/javascript" src="assets/javascripts/global.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/dante.css">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/bulma.css">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/write.css">
+		<link rel="icon" type="image/png" href="assets/images/t.png">
+	</head>
+	<body>
+		<section class="section">
+			<div class="container">
+				<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+		  		  	<div class="navbar-brand">
+		  		  		<a class="navbar-item" href="/"><h1 class="brand-text">typetrove<span class="has-text-link">.</span></h1></a> 
+		  		  		<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+		  		  			<span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+		  		  		</a>
+		  		  	</div>
+		  	  		<div class="navbar-menu main-menu"><div class="navbar-end"></div></div>
+				</nav>
+				<div class="editor container-content"></div>
+				<button class="button publish is-link">Publish</button>
+			</div>
+		</section>
+		<div class="modal auth-modal"></div>
+		<div class="modal publish-modal"></div>
+		<div class="modal stripe-modal"></div>
+		<div class="modal error-modal"></div>
+	</body>
+</html>

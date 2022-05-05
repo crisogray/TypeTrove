@@ -1,0 +1,44 @@
+
+figure {
+	width: fit-content
+}
+
+figure.image img {
+	object-fit: scale-down;
+	max-height: 196px;
+	width: auto;
+}
+
+figure.image img.top-image {
+	max-height: 128px;
+}
+
+div.box {
+	border: 2px solid #9984D4;
+}
+
+.button-container {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+@media screen and (max-width: 768px) {
+	.button-container {
+		margin-top: 16px;
+		margin-bottom: 20px 
+	}
+	.title.is-1, .subtitle.is-3 {
+		text-align: center;
+	}
+	.columns .column .subtitle.is-3 {
+		margin-top: 0;
+	}
+	.container-content.columns {
+		margin-top: 0;
+		text-align: center;
+	}
+	.image-container {
+		text-align: -webkit-center
+	}
+}

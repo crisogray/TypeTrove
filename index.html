@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TypeTrove</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106314448-2"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
+	<script type="text/javascript" src="/assets/javascripts/global.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/bulma.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/index.css">
+	<link rel="icon" type="image/png" href="/assets/images/t.png">
+</head>
+
+<body>
+	<section class="section">
+		<div class="container">
+			<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="/">
+						<h1 class="brand-text">typetrove<span class="has-text-link">.</span></h1>
+					</a>
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+						<span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+					</a>
+				</div>
+				<div class="navbar-menu main-menu">
+					<div class="navbar-end"></div>
+				</div>
+			</nav>
+			<div class="container-content"><br>
+				<div class="columns">
+					<div class="column is-9">
+						<h1 class="title is-1">Welcome to TypeTrove</h1>
+						<h2 class="subtitle is-3 is-light">The simplest way to host premium articles.</h2>
+					</div>
+					<div class="column is-3 button-container">
+						<a href="/write" class="button is-large is-link is-rounded">Get Started</a>
+					</div>
+				</div>
+				<div class="columns container-content">
+					<div class="column">
+						<h1 class="title">1. Write</h1>
+						<h2 class="subtitle is-5 is-light">Use the lightweight editor to compose your article.</h2>
+						<a href="/write">
+							<div class="image-container">
+								<figure class="image">
+									<div class="box">
+										<img class="top-image" src="assets/images/write-preview.png">
+									</div>
+								</figure>
+							</div>
+						</a>
+					</div>
+					<div class="column">
+						<h1 class="title">2. Publish</h1>
+						<h2 class="subtitle is-5 is-light">Connect with Stripe, choose a price and publish your article.
+						</h2>
+						<a href="/write">
+							<div class="image-container">
+								<figure class="image">
+									<div class="box">
+										<img class="top-image" src="assets/images/write-preview-2.png">
+									</div>
+								</figure>
+							</div>
+						</a>
+					</div>
+					<div class="column">
+						<h1 class="title">3. Share</h1>
+						<h2 class="subtitle is-5 is-light">Distribute the link to your newly published article.</h2>
+						<a href="/write">
+							<div class="image-container">
+								<figure class="image">
+									<div class="box">
+										<img src="assets/images/write-preview-3.png">
+									</div>
+								</figure>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="modal auth-modal"></div>
+	<div class="modal error-modal"></div>
+</body>
+
+</html>
